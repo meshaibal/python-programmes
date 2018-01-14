@@ -1,5 +1,9 @@
 inputNumber = input("Please Enter A Number:")
-inputNumber = int(inputNumber)
+try:
+    inputNumber = int(inputNumber)
+except:
+    print("Not a valid Number.")
+    quit()
 
 if inputNumber > 1:
     for number in range(2,inputNumber):
